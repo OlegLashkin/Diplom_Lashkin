@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link > 
     <title>ArtSvadebka</title>
 </head>
 <body>
@@ -178,7 +180,17 @@
         <div class="container-xl">
             <h2 class="text-center">Галерея</h2>
             <div class="carousel slide" data-interval="false" data-touch="false" id="carouselExampleControlsNoTouching">
-                <div class="carousel-inner col-xl-10 m-auto text-justify">
+                <div class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img alt="" src="img/Gallery/1.jpg"></li>
+                              <li class="splide__slide"><img alt="" src="img/Gallery/2.jpg"></li>
+                              <li class="splide__slide"><img alt="" src="img/Gallery/3.jpg"></li>
+                          </ul>
+                    </div>
+                  </div>
+                
+                <!-- <div class="carousel-inner col-xl-10 m-auto text-justify">
                     <div class="carousel-item active">
                         <p class="text-center"><img alt="" src="img/Gallery/1.jpg"></p>
                         </div>
@@ -200,7 +212,7 @@
                     <div class="carousel-item">
                         <p class="text-center"><img alt="" src="img/Gallery/7.jpg"></p>
                         </div>        
-                </div>
+                </div> -->
                 <button class="carousel-control-prev" data-slide="prev" data-target="#carouselExampleControlsNoTouching"
                         type="button">
                     <span aria-hidden="true" class="fa fa-arrow-circle-left"></span>
@@ -217,7 +229,7 @@
     <div class="col-xl-12 footer" id="footer">
         <div class="container-xl">
             <h2 class="text-center">Связаться со мной</h2>
-            <div class="col-lg-12 d-flex justify-content-xl-between justify-content-center align-items-center align-items-xl-center flex-wrap">
+            <div class="col-lg-12 d-flex justify-content-center align-items-center align-items-xl-center flex-wrap">
                 
                 <div class="container__persona">
                     <div class="persona">
@@ -248,5 +260,6 @@
 <script crossorigin="anonymous"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>        
 </body>
 </html>
