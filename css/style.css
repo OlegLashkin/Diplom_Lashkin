@@ -7,10 +7,6 @@ html {
   margin: 0;
 }
 
-.container-fluid {
-  min-width: fit-content;
-}
-
 h2 {
   color: #0077FF;
   font-family: Philosopher;
@@ -28,22 +24,17 @@ h5 {
   line-height: 30px;
 }
 
-.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-
 .header {
   -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
-  /* background-color: #0077FF; */
-  background: linear-gradient(45deg, #0077FF, #4da0ff);
+  background-color: #0077FF;
+  background: linear-gradient(45deg, #0077FF, #6cb0ff);
   padding-bottom: 38px;
   padding-top: 38px;
 }
 
 .header a {
-  color: #d4d0c8;
+  color: hsl(40, 12%, 81%);
   font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
@@ -108,14 +99,13 @@ h5 {
 }
 
 .img_layer img {
-  margin-top: -50px;
   width: 100%;
   height: 100%;
 }
 
 .upcf {
   color: #000000;
-  font-family: Roboto;
+  font-family: Philosopher;
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -192,18 +182,22 @@ p.card_subtext {
   line-height: 90px;
   text-align: left;
 }
+.splide__slide {
 
+  text-align: center;
+}
 
 .preferences h2 {
   margin-bottom: 30px;
 }
 
-.questions {
+.price {
+  background-color: #eeeeed;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
-.questions h2 {
+.price h2 {
   margin-bottom: 36px;
 }
 
@@ -211,7 +205,7 @@ p.card_subtext {
   margin-bottom: 30px;
 }
 
-.quest {
+/* .quest {
   margin-bottom: 30px;
   color: #0077FF;
   font-family: Philosopher;
@@ -236,7 +230,7 @@ p.card_subtext {
 
 .quest_here a:hover {
   color: #eb477b;
-}
+} */
 
 .btn-link:hover {
   color: #0077FF;
@@ -259,7 +253,7 @@ p.card_subtext {
 }
 
 .photo {
-  background-color: #eeeeed;
+  background-color: #ffffff;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -296,6 +290,7 @@ p.card_subtext {
 }
 
 .footer {
+  background-color: #ffffff;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -381,11 +376,9 @@ p.card_subtext {
   color: #eeeeed;
   font-size: 18px;
 }
-/*"Контактные данные*/
-
 
 .container__persona {
-  perspective: 1000px; /*"Удаленность" объекта от пользователя*/
+  perspective: 1000px; 
   width: 250px;
   height: 300px;
   margin: 0 15px;
@@ -394,25 +387,25 @@ p.card_subtext {
   }
 .persona {
   position: relative;
-  cursor: pointer; /*Изменение курсора*/
+  cursor: pointer; 
   width: 300px;
   height: 300px;
-  transition: 2s; /*Время на выполнение анимации*/
-  transform-style: preserve-3d; /*Определение 3D пространства для объекта*/
+  transition: 2s; 
+  transform-style: preserve-3d; 
   }
 .container__persona:hover .persona {
-  transform: rotateY(180deg); /*Свойства transform - вращение по оси Y на 180 градусов*/
+  transform: rotateY(180deg); 
   }
 .persona__foto {
   width: 300px;
   height: 300px;
   overflow: hidden;
-  z-index: 2; /*Расположение объекта по оси Z выше всех остальных - ближе к пользователю - над всеми остальными объектами*/
+  z-index: 2; 
   position: absolute;
   top: 0;
   left: 0;
-  backface-visibility: hidden; /*Transparency стороны объекта*/
-  border-radius: 15px; /*Скругленные углы*/
+  backface-visibility: hidden; 
+  border-radius: 15px; 
   }
 .persona__info {
   background-color: #0077FF;
@@ -422,7 +415,7 @@ p.card_subtext {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; /*Расположеие по оси Z ниже, чем .persona__foto*/
+  z-index: 1; 
   backface-visibility: hidden;
   transform: rotateY(180deg);
   border-radius: 15px;
