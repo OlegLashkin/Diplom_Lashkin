@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_button.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
     <title>ArtSvadebka</title>
 </head>
 <body>
 <div class="container-fluid">
     <div class="col-xl-12 header">
         <div class="container-xl d-flex justify-content-xl-between justify-content-center flex-wrap align-items-center">
-            <a href="#" target="blank">Перейти на сайт образовательного центра</a>
             <ul class="nav icon_menu">
-                <a href="#" target="_blank">
+                <a href="https://vk.com/artlashkin" target="_blank">
                     <li class="nav-item p-2 mr-3 fab fa-vk"></li>
                 </a>
                 <a href="#" target="_blank">
@@ -22,7 +27,7 @@
                 <a href="#" target="_blank">
                     <li class="nav-item p-2 mr-3 fab fa-instagram"></li>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://t.me/Art_Lashkin" target="_blank">
                     <li class="nav-item p-2 fab fa-telegram-plane"></li>
                 </a>
             </ul>
@@ -30,41 +35,44 @@
     </div>
     <div class="col-xl-12 header_main">
         <div class="col-xl-12 main_menu">
-            <div class="container-xl d-flex justify-content-xl-end justify-content-center">
+            <div class="container d-flex justify-content-xl-end justify-content-center">
                 <ul class="nav">
                     <a href="#about">
                         <li class="nav-item list-unstyled">O нас</li>
                     </a>
-                    <a href="#preferences">
-                        <li class="nav-item">под вопросом</li>
-                    </a>
-                    <a href="#questions">
-                        <li class="nav-item">Цены</li>
-                    </a>
-                    <a href="#comments">
+                    <a href="#photo">
                         <li class="nav-item">Галерея</li>
+                    </a>
+                    <a href="#price">
+                        <li class="nav-item">Цены</li>
                     </a>
                    
                 </ul>
             </div>
         </div>
         <div class="col-xl-12 title">
-            <div class="container-xl">
+            <div class="container">
                 <h1 class="text-xl-right text-center">Добро пожаловать в свадебное пространство <br> 
                     <b>Art Svadebka</b>
                 </h1>
             </div>
         </div>
         <div class="col-xl-12 img_layer p-0">
-            <div class="container-xl">
+            <div class="container">
                 <div class="col-xl-12  d-flex flex-wrap p-0">
                     <div class="col-xl-6 col-8 p-0">
                         <img alt="" src="img/camera.png">
                     </div>
                     <div class="col-xl-6 p-0">
                         <p class="text-xl-right text-center upcf">Организация и проведение фото-видео съемки Вашего торжества</p>
-                        <p class="text-xl-right text-center"><a href="#footer">
-                            <input class="btn call_course" type="button" value="Оставить заявку"></a>
+                        <p class="text-xl-right text-center">
+                            <!-- <a href="#footer"><input class="btn call_course" type="button" value="Оставить заявку"></a> -->
+                            <!-- <div class="wrapper"> -->
+                                <a href="#footer" class="wave-btn">
+                                    <span class="wave-btn__text">Telegram</span>
+                                    <span class="wave-btn__waves"></span>
+                                </a>
+                            <!-- </div> -->
                         </p>
                     </div>
                 </div>
@@ -72,49 +80,108 @@
         </div>
     </div>
     <div class="col-xl-12 about" id="about">
-        <div class="container-xl">
+        <div class="container">
             <h2 class="text-center">О нас</h2>
             <p class="text-justify">В жизни каждого человека наступет такое время,которое он очень хотел бы запомнить, запечатлеть. 
                 Доверьте это дело нам - команде с большим стажем и опытом в фото и видео индустрии. </p>
             <p class="text-center">Заказать у нас вы можете следующие виды фото-видео услуг</p>
             <div class="col-xl-12 cards d-flex justify-content-xl-between justify-content-center flex-wrap">
                 <div class="col-xl-4 col-4 text-center cards_item">
-                    <p><img alt="" src="img/dip.png"></p>
+                    <p><img width="30%" alt="" src="img/photographer1.png"></p>
                     <p><h5>Фотосессия</h5>
                     <p class="card_subtext">Фотосъемки в студиях города или на природе.</p>
                 </div>
                 <div class="col-xl-4 col-4 text-center cards_item">
-                    <p><img alt="" src="img/stud.png"></p>
+                    <p><img width="30%" alt="" src="img/photographer2.png"></p>
 
                     <p><h5>Свадебная съемка</h5>
-                    <p class="card_subtext">Очная <br>
-                        Дистанционная</p>
+                    <p class="card_subtext">Наш фотограф пробудет с Вами весь день для того, что бы сделать красивые снимки.</p>
                 </div>
                 <div class="col-xl-4 col-4 text-center cards_item">
-                    <p><img alt="" src="img/$.png"></p>
+                    <p><img width="30%" alt="" src="img/photographer3.png"></p>
                     <p><h5>Репортажная съемка</h5>
-                    <p class="card_subtext">Очная форма: 10 000 р. <br>
-                        Дистанционная форма: 7 000 р <br>
-                        Возможность поэтапной оплаты</p>
+                    <p class="card_subtext">Самые важные кадры остануться с Вами будь то конференция или просто день рождения.
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="col-xl-12 preferences" id="preferences">
-        <div class="container-xl">
-            <h2 class="text-center">Под вопросом</h2>
-            <!-- <ul class="list-unstyled col-xl-8 col-md-10 m-auto">
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Обучение в престижном ВУЗе</li>
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Гибкие условия оплаты</li>
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Возможность тестового периода обучения</li>
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Индивидуальный график</li>
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Портфолио по окончании курса</li>
-                <li><span class="fa fa-check-circle">&nbsp;&nbsp;</span>Практикующие преподаватели</li>
-            </ul> -->
+        <div class="container">
+            <div class="col-xl-12 cards d-flex justify-content-xl-between justify-content-center flex-wrap">
+                <div class="col-xl-4 col-4 text-center cards_item">
+                    <p><img width="100%" alt="" src="img/backstage/back1.jpg"></p>
+                </div>
+                <div class="col-xl-4 col-4 text-center cards_item">
+                    <p><img width="100%" alt="" src="img/backstage/back2.jpg"></p>
+                </div>
+                <div class="col-xl-4 col-4 text-center cards_item">
+                    <p><img width="100%" alt="" src="img/backstage/back3.jpg"></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-xl-12 questions" id="questions">
-        <div class="container-xl">
+    
+    </div>
+    <div class="col-xl-12 photo" id="photo">
+        <div class="container">
+            <div class="carousel slide" data-interval="false" data-touch="false" id="carouselExampleControlsNoTouching">
+                <div class="splide">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                          <div class="splide__slide__container">
+                            <img src="img/Gallery/1.jpg">
+                          </div>
+                        </li>
+                        <li class="splide__slide">
+                          <div class="splide__slide__container">
+                            <img src="img/Gallery/2.jpg">
+                          </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                              <img src="img/Gallery/3.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                              <img src="img/Gallery/4.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                              <img src="img/Gallery/5.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                              <img src="img/Gallery/6.jpg">
+                            </div>
+                        </li>     
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                  <img src="img/Gallery/7.jpg">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                  <img src="img/Gallery/8.jpg">
+                            </div>
+                        </li>    
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                  <img src="img/Gallery/9.jpg">
+                            </div>
+                        </li>  
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12 price" id="price">
+        <div class="container">
             <h2 class="text-center">Цены</h2>
             <div class="col-xl-12 accordion" id="accordion">
                 <div class="card">
@@ -127,7 +194,7 @@
                             </button>
                         </h5>
                     </div>
-                    <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordion" id="collapseOne">
+                    <div aria-labelledby="headingOne" class="collapse" data-parent="#accordion" id="collapseOne">
                         <div class="card-body">
                                 <span class="text_inside ">Цена свадебного дня (12часов работы фотографа) составляет 25000р. 
                                     Но если Ваше торжество занимает меньшее время, то вы можете воспользоваться 
@@ -149,7 +216,7 @@
                         <div class="card-body">
                             <span class="text_inside">Фотосессии проводятся как в студия города так и на открытом воздухе. 
                                 Стоимость одного часа работы фотографа составляет 2000р. Если происходит выездная фотосъемка и место проведения 
-                            находиться на большом отдалении то стоимость может быть скорректирована</span>
+                            находиться на большом отдалении, то стоимость может быть скорректирована</span>
                         </div>
                     </div>
                 </div>
@@ -158,7 +225,7 @@
                         <h5 class="mb-0">
                             <button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link collapsed"
                                     data-target="#collapseThree" data-toggle="collapse">
-                                <span class="title_acc"><i class="fa fa-caret-down"></i>Съемка корпоратива, дня рождения и подобные съемки</span>
+                                <span class="title_acc"><i class="fa fa-caret-down"></i>Репортажная съемка</span>
                             </button>
                         </h5>
                     </div>
@@ -171,46 +238,19 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center quest">Не нашли ответа на свой вопрос?</p>
-            <p class="text-center quest_here"><a href="#" target="_blank">Спросить здесь</a></p>
+            <!-- <p class="text-center quest">Не нашли ответа на свой вопрос?</p>
+            <p class="text-center quest_here"><a href="https://t.me/Art_Lashkin" target="_blank">Самы быстрый способ связи со мной</a></p> -->
         </div>
-    </div>
-    <div class="col-xl-12 photo" id="photo">
-        <div class="container-xl">
-            <h2 class="text-center">Галерея</h2>
-            <div class="carousel slide" data-interval="false" data-touch="false" id="carouselExampleControlsNoTouching">
-                <div class="splide">
-                    <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">
-                          <div class="splide__slide__container">
-                            <img src="img/Gallery/1.jpg">
-                          </div>
-                        </li>
-                        <li class="splide__slide">
-                          <div class="splide__slide__container">
-                            <img src="img/Gallery/2.jpg">
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                </div>
-                
-                <!-- <div class="splide">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide"><img alt="" src="img/Gallery/1.jpg"></li>
-                              <li class="splide__slide"><img alt="" src="img/Gallery/2.jpg"></li>
-                              <li class="splide__slide"><img alt="" src="img/Gallery/3.jpg"></li>
-                          </ul>
-                    </div>
-                </div> -->
-                                             
-            </div>
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-    </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div> -->
     <div class="col-xl-12 footer" id="footer">
-        <div class="container-xl">
+        <div class="container">
             <h2 class="text-center">Связаться со мной</h2>
             <div class="col-lg-12 d-flex justify-content-center align-items-center align-items-xl-center flex-wrap">
                 
@@ -221,33 +261,47 @@
                         </div>
                         <div class="persona__info">
                             <h3>Лашкин Олег</h3>
-                            <a href="https://vk.com/artlashkin" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>ArtLashkin</a>
-                            <a href="https://nn.gorko.ru/фотографы/509693/" target="_blank"><i class="fa fa-camera" aria-hidden="true"></i>Gorko</a>
-                            <a href="https://www.youtube.com/channel/UCeSzJ4Xq8xVnmQncGbiON5w" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>ArtLashkin</a>
+                            <a href="https://vk.com/artlashkin" target="_blank">
+                                <li class="nav-item p-2 mr-3 fab fa-vk"></li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="nav-item p-2 mr-3 fab fa-facebook"></li>
+                            </a>
+                            <a href="#" target="_blank">
+                                <li class="nav-item p-2 mr-3 fab fa-instagram"></li>
+                            </a>
+                            <a href="https://t.me/Art_Lashkin" target="_blank">
+                                <li class="nav-item p-2 mr-3 fab fa-telegram-plane"></li>
+                            </a>
                         </div>
                     </div>
                 </div>  
         </div>
     </div>
     <div class="col-xl-12 footer_down">
-        <div class="container-xl">
+        <div class="container">
             <p>Свадебное пространство &copy;ARTSvadebka</p>
             <p>Любое использование материалов недопускается</p>
             <p>Все снимки являются собственностью</p>
         </div>
     </div>
 </div>
+
 <script crossorigin="anonymous"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous"></script>   
 <script crossorigin="anonymous"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
 <script>
-    new Splide( '.splide', {
+    const splide = new Splide( '.splide', {
   type       : 'loop',
-  height     : '9rem',
+  height     : '50rem',
   perPage    : 2,
   breakpoints: {
     640: {
@@ -255,6 +309,8 @@
     },
   },
 } );
-</script>        
+  splide.mount();
+</script> 
+
 </body>
 </html>
